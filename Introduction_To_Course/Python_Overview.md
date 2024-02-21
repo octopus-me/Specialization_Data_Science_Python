@@ -31,3 +31,20 @@ Tuples are similar to lists, but they are immutable, meaning they cannot be chan
 my_tuple = (1, "Hello", 3.14)
 print(my_tuple)
 ```
+
+## Dictionaries
+
+Dictionaries store pairs of items as key-values pairs. They are unordered collection, where each key is unique.
+
+### Features
+
+- **Unordered:** They are collections where items do not have a defined order.
+- **Mutable:** You can chance, add, and remove pairs.
+- **Keys are unique:** No two pairsr can have the same key.
+
+  ## Example:
+
+  ```python
+  my_dict = {'name':'John', 'age':30}
+  print(my_dict)
+  ```
