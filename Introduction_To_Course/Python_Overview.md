@@ -15,3 +15,16 @@ Lists are ordered collections of items (which can be of different types) and are
 ```python
 my_list = [1, "Hello", 3.14]
 print(my_list)
+
+
+## Tuples
+
+Tuples are similar to listis, but they are immutable, meaning they cannot be changed after creation. They are used to store collection of items in specific order.
+
+### Features:
+- **Ordered: ** The items have a defined order, and that order will not change.
+- **Immutable: ** Once a tuple is created, you cannot change, add, or remove items.
+- **Allow duplicates: ** Tuples can also have items with the same value.
+
+### Example:
+
