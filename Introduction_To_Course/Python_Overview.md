@@ -22,9 +22,9 @@ print(my_list)
 Tuples are similar to lists, but they are immutable, meaning they cannot be changed after creation. They are used to store collection of items in specific order.
 
 ### Features:
-- **Ordered: ** The items have a defined order, and that order will not change.
-- **Immutable: ** Once a tuple is created, you cannot change, add, or remove items.
-- **Allow duplicates: ** Tuples can also have items with the same value.
+- **Ordered:** The items have a defined order, and that order will not change.
+- **Immutable:** Once a tuple is created, you cannot change, add, or remove items.
+- **Allow duplicates:** Tuples can also have items with the same value.
 
 ### Example:
 ```python
