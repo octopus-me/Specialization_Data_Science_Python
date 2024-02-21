@@ -15,7 +15,7 @@ Lists are ordered collections of items (which can be of different types) and are
 ```python
 my_list = [1, "Hello", 3.14]
 print(my_list)
-
+```
 
 ## Tuples
 
