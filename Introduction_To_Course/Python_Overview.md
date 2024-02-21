@@ -48,3 +48,21 @@ Dictionaries store pairs of items as key-values pairs. They are unordered collec
   my_dict = {'name':'John', 'age':30}
   print(my_dict)
   ```
+
+
+## Sets
+
+Sets are unordered collections of unique items. They are mutable and useful for performing mathematical set operations like unions, intersection difference, and summetric difference.
+
+### Features:
+
+- **Unordered:** The items do not have a defined order, and their order can change.
+- **Mutable:** You can add or remove items from a set.
+- **No duplicates:** Sets cannot have two items with the same value.
+
+## Example:
+
+```python
+my_set = {1,2,3,4,5}
+print(my_set)
+```
