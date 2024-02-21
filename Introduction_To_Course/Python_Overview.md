@@ -95,3 +95,69 @@ today - delta  # the date 100 days ago
 today > today - delta  # compare dates
 today > today - delta  # compare dates
 ```
+## Importing Modules
+
+First, import the necessary modules:
+
+```python
+import datetime as dt
+import time as tm
+```
+
+## Getting Current Time
+
+```python
+tm.time()
+```
+
+This function call returns the current time in seconds since the Epoch (January 1st, 1970).
+
+## Converting Timestamp to datetime
+
+```python
+dtnow = dt.datetime.fromtimestamp(tm.time())
+```
+
+This converts the timestamp to a datetime object.
+
+## Accessing datetime Attributes
+
+```python
+dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second
+```
+
+These lines demonstrate accessing various attributes of the datetime object.
+
+## Creating a Timedelta Object
+
+```python
+delta = dt.timedelta(days=100)
+```
+This creates a timedelta object representing a duration of 100 days.
+
+## Getting Today's Date
+
+```python
+today = dt.date.today()
+```
+
+This retrieves the current local date.
+
+## Performing Date Arithmetic
+
+```python
+today - delta  # the date 100 days ago
+```
+
+Subtracting delta from today gives the date 100 days ago.
+
+## Comparing Dates
+
+```python
+today > today - delta  # compare dates
+```
+
+This line compares today's date with the date 100 days ago using the greater than operator.
+
+This guide provides a basic overview of handling dates and times in Python using the datetime module.
+
