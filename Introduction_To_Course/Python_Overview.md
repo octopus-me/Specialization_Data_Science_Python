@@ -66,3 +66,32 @@ Sets are unordered collections of unique items. They are mutable and useful for 
 my_set = {1,2,3,4,5}
 print(my_set)
 ```
+
+
+# Working with Dates and Time
+```python
+import datetime as dt
+import time as tm
+import datetime as dt
+import time as tm
+#time returns the current time in seconds since the Epoch. (January 1st, 1970)
+
+tm.time()
+#Convert the timestamp to datetime.
+
+dtnow = dt.datetime.fromtimestamp(tm.time())
+dtnow
+#Handy datetime attributes:
+
+dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second  # get year, month, day, etc.from a datetime
+#timedelta is a duration expressing the difference between two dates.
+
+delta = dt.timedelta(days=100)  # create a timedelta of 100 days
+delta
+date.today returns the current local date.
+
+today = dt.date.today()
+today - delta  # the date 100 days ago
+today > today - delta  # compare dates
+today > today - delta  # compare dates
+```
