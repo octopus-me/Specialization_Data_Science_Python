@@ -1,1 +1,1 @@
-# Specialization_Data_Science_Python
+# Applied Data Science with Python Specialization
