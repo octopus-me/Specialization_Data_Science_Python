@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Data Structures Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        code {
+            font-family: "Courier New", Courier, monospace;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Python Data Structures Overview</h1>
+
+    <p>This guide provides an overview of Python's fundamental data structures: lists, tuples, sets, and dictionaries. Understanding these data structures is crucial for effective data manipulation and algorithm development in Python.</p>
+
+    <h2>Lists</h2>
+
+    <p>Lists are ordered collections of items (which can be of different types) and are one of the most versatile data structures in Python. They can be modified after their creation (mutable), allowing for operations like adding, removing, or changing items.</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li><strong>Ordered:</strong> The items have a defined order, and that order will not change.</li>
+        <li><strong>Mutable:</strong> You can change, add, and remove items in a list after it has been created.</li>
+        <li><strong>Allow duplicates:</strong> Since lists are indexed, they can have items with the same value.</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <pre><code>my_list = [1, "Hello", 3.14]
+print(my_list)
+</code></pre>
+
+    <h2>Tuples</h2>
+
+    <p>Tuples are similar to lists, but they are immutable, meaning they cannot be changed after creation. They are used to store a collection of items in a specific order.</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li><strong>Ordered:</strong> The items have a defined order, and that order will not change.</li>
+        <li><strong>Immutable:</strong> Once a tuple is created, you cannot change, add, or remove items.</li>
+        <li><strong>Allow duplicates:</strong> Tuples can also have items with the same value.</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <pre><code>my_tuple = (1, "Hello", 3.14)
+print(my_tuple)
+</code></pre>
+
+    <h2>Dictionaries</h2>
+
+    <p>Dictionaries store pairs of items as key-value pairs. They are an unordered collection, where each key is unique.</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li><strong>Unordered:</strong> They are collections where items do not have a defined order.</li>
+        <li><strong>Mutable:</strong> You can change, add, and remove pairs.</li>
+        <li><strong>Keys are unique:</strong> No two pairs can have the same key.</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <pre><code>my_dict = {'name':'John', 'age':30}
+print(my_dict)
+</code></pre>
+
+    <h2>Sets</h2>
+
+    <p>Sets are unordered collections of unique items. They are mutable and useful for performing mathematical set operations like unions, intersections, differences, and symmetric differences.</p>
+
+    <h3>Features:</h3>
+    <ul>
+        <li><strong>Unordered:</strong> The items do not have a defined order, and their order can change.</li>
+        <li><strong>Mutable:</strong> You can add or remove items from a set.</li>
+        <li><strong>No duplicates:</strong> Sets cannot have two items with the same value.</li>
+    </ul>
+
+    <h3>Example:</h3>
+    <pre><code>my_set = {1,2,3,4,5}
+print(my_set)
+</code></pre>
+
+    <h1>Working with Dates and Time</h1>
+
+    <pre><code>import datetime as dt
+import time as tm
+import datetime as dt
+import time as tm
+#time returns the current time in seconds since the Epoch. (January 1st, 1970)
+
+tm.time()
+#Convert the timestamp to datetime.
+
+dtnow = dt.datetime.fromtimestamp(tm.time())
+dtnow
+#Handy datetime attributes:
+
+dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second  # get year, month, day, etc.from a datetime
+#timedelta is a duration expressing the difference between two dates.
+
+delta = dt.timedelta(days=100)  # create a timedelta of 100 days
+delta
+date.today returns the current local date.
+
+today = dt.date.today()
+today - delta  # the date 100 days ago
+today > today - delta  # compare dates
+today > today - delta  # compare dates
+</code></pre>
+
+    <h2>Importing Modules</h2>
+
+    <pre><code>import datetime as dt
+import time as tm
+</code></pre>
+
+    <h2>Getting Current Time</h2>
+
+    <pre><code>tm.time()
+</code></pre>
+
+    <p>This function call returns the current time in seconds since the Epoch (January 1st, 1970).</p>
+
+    <h2>Converting Timestamp to datetime</h2>
+
+    <pre><code>dtnow = dt.datetime.fromtimestamp(tm.time())
+</code></pre>
+
+    <p>This converts the timestamp to a datetime object.</p>
+
+    <h2>Accessing datetime Attributes</h2>
+
+    <pre><code>dtnow.year, dtnow.month, dtnow.day, dtnow.hour, dtnow.minute, dtnow.second
+</code></pre>
+
+    <p>These lines demonstrate accessing various attributes of the datetime object.</p>
+
+    <h2>Creating a Timedelta Object</h2>
+
+    <pre><code>delta = dt.timedelta(days=100)
+</code></pre>
+
+    <p>This creates a timedelta object representing a duration of 100 days.</p>
+
+    <h2>Getting Today's Date</h2>
+
+    <pre><code>today = dt.date.today()
+</code></pre>
+
+    <p>This retrieves the current local date.</p>
+
+    <h2>Performing Date Arithmetic</h2>
+
+    <pre><code>today - delta  # the date 100 days ago
+</code></pre>
+
+    <p>Subtracting delta from today gives the date 100 days ago.</p>
+
+    <h2>Comparing Dates</h2>
+
+    <pre><code>today > today - delta  # compare dates
+</code></pre>
+
+    <p>This line compares today's date with the date 100 days ago using the greater than operator.</p>
+
+    <p>This guide provides a basic overview of handling dates and times in Python using the datetime module.</p>
+
+</div>
+
+</body>
+</html>
